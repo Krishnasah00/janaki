@@ -68,4 +68,14 @@ class LoginController extends Controller
         return response()->json(['type' => $type, 'message' => $message, 'route' => $route]);
     }
     /**  Ends :: Login Verification */
+
+
+    /**  Starts :: Logged Out */
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        session()->flush();
+        return redirect()->route('admin.login')->with('success', 'Logged out successfully');
+    }
+    /**  Ends :: Logged Out */
 }
