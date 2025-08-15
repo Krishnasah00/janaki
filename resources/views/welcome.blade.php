@@ -10,6 +10,7 @@
 
 <body style="">
     <strong>Create Tenanat</strong>
+    <a href="">Create Tenant</a>
 
 </body>
 
